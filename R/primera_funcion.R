@@ -4,11 +4,11 @@
 #' @param ruta_archivo
 #'
 #' @return
-#' @export
-#'
 #' @examples
+#'
+#' @export
 descarga_datos<- function(id_estacion, ruta_archivo) {
-  url_repositorio <- "https://github.com/wenceslao015/windyR/tree/23d9bc8be68747c66f6c35631cf33ea27dd933a2/datos"
+  url_repositorio <- "https://raw.githubusercontent.com/rse-r/intro-programacion/main/datos/"
 
   estacion_url <- paste0(url_repositorio, id_estacion, ".csv")
 
