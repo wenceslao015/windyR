@@ -12,7 +12,7 @@ descarga_datos<- function(id_estacion, ruta_archivo) {
 
   estacion_url <- paste0(url_repositorio, id_estacion, ".csv")
 
-  download.file(url = estacion_url, destfile = ruta_archivo)
+  download.file(url = estacion_url, destfile = ruta_archivo,mode = "wb")
 
   datos <- readr::read_csv(ruta_archivo)
 
