@@ -1,0 +1,32 @@
+---
+title: "Como usar el paquete windyR"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{primera_vinieta}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+## Introducción
+
+El paquete `windyR` está diseñado para facilitar la descarga, manipulación y visualización de datos de estaciones meteorológicas. En esta guía se describe cómo utilizar cada función principal del paquete, incluyendo ejemplos detallados.
+
+### Requisitos Previos
+
+Antes de comenzar, asegúrate de tener los paquetes necesarios instalados en R:
+
+```{r setup}
+library(windyR)
+```
+
+
+
+
+
