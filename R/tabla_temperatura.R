@@ -1,12 +1,16 @@
-#' Title
+#' Tabla de temperatura de estaciones
 #'
 #' @param datos
+#' @import dplyr
 #'
 #' @return
-#' @export
+#' Nos devuelve una tabla con valores de temperatura
 #'
 #' @examples
-tabla_temperatura <- function(datos) {
+#' tabla_de_temperatura_estaciones(estacion_NH0046)
+#'
+#' @export
+tabla_de_temperatura_estaciones <- function(datos) {
   resumen <- datos %>%
     group_by(id) %>%
     summarise(

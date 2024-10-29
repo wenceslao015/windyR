@@ -1,0 +1,41 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# windyR
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+El objetivo de este paquete ("windyR") es trabajar con datos meteorologicos.
+
+## Instalación
+
+Se puede instalar la version de windyR desde [GitHub](https://github.com/) con:
+
+
+```{r}
+# install.packages("pak")
+pak::pak("wenceslao015/windyR")
+```
+
+## Ejemplo
+
+Esto es un ejemplo sobre una de las funciones basicas de este paquete
+
+```{r}
+library(windyR)
+## basic example code
+```
+

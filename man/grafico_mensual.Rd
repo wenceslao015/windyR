@@ -2,13 +2,16 @@
 % Please edit documentation in R/grafico_temperatura.R
 \name{grafico_mensual}
 \alias{grafico_mensual}
-\title{Title}
+\title{Grafico de temperatura mensual}
 \usage{
-grafico_mensual(datos, paleta = NULL, titulo_grafico = "Temperatura Mensual")
+grafico_mensual(datos, colores = NULL, titulo = "Temperatura")
 }
-\arguments{
-\item{titulo_grafico}{}
+\value{
+Nos devuelve un grafico con la estacion seleccionada, con el eje x sobre el mes y el eje y sobre temperatura promedio
 }
 \description{
-Title
+Grafico de temperatura mensual
+}
+\examples{
+grafico_temperatura_mensual(estacion_NH0046, colores = "red", titulo = "Temperatura")
 }
