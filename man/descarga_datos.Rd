@@ -7,15 +7,19 @@
 descarga_datos(id_estacion, ruta_archivo)
 }
 \arguments{
-\item{ruta_archivo}{}
+\item{id_estacion}{Un string con el ID de la estación meteorológica (por ejemplo, "NH0046"). Este ID se utiliza para construir la URL de descarga del archivo.}
+
+\item{ruta_archivo}{Un string con la ruta completa y el nombre del archivo donde se guardará el CSV descargado.}
 }
 \value{
-un archivo .csv con el id de la estación buscada
+Un data frame con los datos de la estación meteorológica descargada.
 }
 \description{
-Funcion de descarga de datos
+La funcion \code{descarga_datos()} descarga un archivo CSV de datos de una estación meteorológica específica desde un repositorio en línea y lo guarda en la ruta especificada. Luego, lee el archivo y devuelve los datos como un data frame.
 }
 \examples{
-descarga_datos("NH0098", "C:/Users/Documentos/windyR/datos/estacion_NH0098")
-descarga_datos("NH0910", "C:/Users/Documentos/windyR/datos/estacion_NH0910")
+\dontrun{
+descarga_datos("NH0098", "C:/inserte/su/ruta/de/directorio/datos/estacion_NH0098")
+}
+
 }

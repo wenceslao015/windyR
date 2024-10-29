@@ -3,7 +3,7 @@ Title: Analiza Datos Meteorologicos
 Version: 0.0.0.9000
 Authors@R: 
     c(person("Wenceslao", "Tejerina", email = "wentejerina2005@gmail.com", role = c("aut", "cre")),
-      person("Justo", "Borras", email = "completar", role = "aut"))
+      person("Justo", "Borras", email = "justoborras8@gmail.com", role = "aut"))
 Description: Este paquete resuelve problemas de una dataset de temperatura.
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license

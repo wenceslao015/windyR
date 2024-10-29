@@ -2,15 +2,24 @@
 % Please edit documentation in R/tabla_temperatura.R
 \name{tabla_de_temperatura_estaciones}
 \alias{tabla_de_temperatura_estaciones}
-\title{Tabla de temperatura de estaciones}
+\title{Generar tabla resumen de temperaturas por estación}
 \usage{
 tabla_de_temperatura_estaciones(datos)
 }
+\arguments{
+\item{datos}{Un data frame que contiene los datos de temperatura por estación.}
+}
 \value{
-Nos devuelve una tabla con valores de temperatura
+Un data frame con el resumen de temperaturas por estación, con las siguientes columnas:
+\itemize{
+\item \code{id}: Identificador de la estación.
+\item \code{min_temp}: Temperatura mínima registrada en la estación.
+\item \code{max_temp}: Temperatura máxima registrada en la estación.
+\item \code{mean_temp}: Temperatura promedio registrada en la estación.
+}
 }
 \description{
-Tabla de temperatura de estaciones
+La función \code{tabla_de_temperatura_estaciones} genera una tabla resumen que incluye la temperatura mínima, máxima y promedio por estación a partir de un conjunto de datos de temperatura.
 }
 \examples{
 tabla_de_temperatura_estaciones(estacion_NH0046)

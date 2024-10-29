@@ -1,16 +1,19 @@
-#' Grafico de temperatura mensual
+#' Gráfico de temperatura mensual promedio por estación
 #'
-#' @param datos
-#' @param paleta
-#' @param titulo
-#' @import dplyr
-#' @import ggplot2
-#' @import lubridate
-#' @return
-#' Nos devuelve un grafico con la estacion seleccionada, con el eje x sobre el mes y el eje y sobre temperatura promedio
+#' La función `grafico_mensual` genera un gráfico de líneas que muestra la temperatura promedio mensual para cada estación en los datos proporcionados. Permite personalizar el título y los colores del gráfico.
+#'
+#' @param datos Un data frame que contiene los datos de temperatura por estación.
+#' @param colores Un vector opcional de colores para cada estación. Si no se especifica, se seleccionarán colores aleatorios.
+#' @param titulo Un string opcional que define el título del gráfico. Por defecto, es "Temperatura".
+#'
+#' @return Un objeto de clase ggplot que representa el gráfico de temperatura mensual promedio por estación.
 #'
 #' @examples
-#' grafico_temperatura_mensual(estacion_NH0046, colores = "red", titulo = "Temperatura")
+#' grafico_mensual(estacion_NH0046, colores = "red", titulo = "Temperatura")
+#'
+#' @import ggplot2
+#' @import dplyr
+#' @import lubridate
 #' @export
 grafico_mensual <- function(datos, colores = NULL, titulo = "Temperatura") {
 

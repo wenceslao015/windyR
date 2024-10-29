@@ -2,16 +2,24 @@
 % Please edit documentation in R/grafico_temperatura.R
 \name{grafico_mensual}
 \alias{grafico_mensual}
-\title{Grafico de temperatura mensual}
+\title{Gráfico de temperatura mensual promedio por estación}
 \usage{
 grafico_mensual(datos, colores = NULL, titulo = "Temperatura")
 }
+\arguments{
+\item{datos}{Un data frame que contiene los datos de temperatura por estación.}
+
+\item{colores}{Un vector opcional de colores para cada estación. Si no se especifica, se seleccionarán colores aleatorios.}
+
+\item{titulo}{Un string opcional que define el título del gráfico. Por defecto, es "Temperatura".}
+}
 \value{
-Nos devuelve un grafico con la estacion seleccionada, con el eje x sobre el mes y el eje y sobre temperatura promedio
+Un objeto de clase ggplot que representa el gráfico de temperatura mensual promedio por estación.
 }
 \description{
-Grafico de temperatura mensual
+La función \code{grafico_mensual} genera un gráfico de líneas que muestra la temperatura promedio mensual para cada estación en los datos proporcionados. Permite personalizar el título y los colores del gráfico.
 }
 \examples{
-grafico_temperatura_mensual(estacion_NH0046, colores = "red", titulo = "Temperatura")
+grafico_mensual(estacion_NH0046, colores = "red", titulo = "Temperatura")
+
 }
