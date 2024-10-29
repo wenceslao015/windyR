@@ -9,6 +9,13 @@ descarga_datos(id_estacion, ruta_archivo)
 \arguments{
 \item{ruta_archivo}{}
 }
+\value{
+un archivo .csv con el id de la estación buscada
+}
 \description{
 Funcion de descarga de datos
+}
+\examples{
+descarga_datos("NH0098", "C:/Users/Documentos/windyR/datos/estacion_NH0098")
+descarga_datos("NH0910", "C:/Users/Documentos/windyR/datos/estacion_NH0910")
 }

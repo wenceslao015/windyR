@@ -4,7 +4,9 @@ Version: 0.0.0.9000
 Authors@R:
   person("Wenceslao", "Tejerina", email = "wentejerina2005@gmail.com",
   role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+  person("Justo", "Borras", email = "completar e mail",
+  role = c("aut", "cre"))
+Description: Este paquete resuelve problemas de una dataset de temperatura.
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license
 Encoding: UTF-8
