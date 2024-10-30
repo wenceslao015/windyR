@@ -3,21 +3,25 @@
 \docType{data}
 \name{datos}
 \alias{datos}
-\title{Conjunto de datos: Datos}
+\title{Datos de temperaturas y horas de frío.}
 \format{
-conjunto de datos con tantas filas y tantas columnas
+Un data frame con las siguientes columnas:
 \describe{
-\item{a}{muestra de datos}
-\item{b}{muestra de datos multiplicada por cinco}
+\item{fecha}{Fecha de la observación, en formato "YYYY-MM-DD".}
+\item{horas_frio}{Número de horas de frío registrado en cada fecha. Puede contener valores NA si no hay datos disponibles.}
+\item{estacion}{Codigo identificador de la estación.}
 }
 }
 \source{
-Repositorio de Github.
+Los datos fueron obtenidos de un repositorio de Github.
 }
 \usage{
 datos
 }
 \description{
-descripcion
+Este dataset contiene datos meteorológicos de la estación NH0472. Incluye información sobre las fechas, las horas de frío registradas y el identificador de la estación.
+}
+\details{
+Las horas de frío se refieren a la cantidad de horas en las que la temperatura fue lo suficientemente baja para contribuir a los procesos de acumulación de frío, relevantes en estudios meteorológicos y agrícolas.
 }
 \keyword{datasets}

@@ -24,9 +24,59 @@ Antes de comenzar, asegúrate de tener los paquetes necesarios instalados en R:
 
 ```{r setup}
 library(windyR)
+library(dplyr)
+library(ggplot2)
+library(lubridate)
 ```
 
+### Esta es una viñeta que explica las funciones disponibles del paquete windyR.
 
+## Funcion `'descarga_datos'`
 
+Esta función descarga datos de una estación meteorológica específica desde un repositorio en línea y los guarda en un archivo CSV. También lee los datos y los carga en un data frame.
 
+La función `descarga_datos` utiliza los siguientes parámetros:
 
+* **`id_estacion`**: Un string que representa el ID de la estación meteorológica (por ejemplo, `"NH0046"`).
+* **`ruta_archivo`**: Un string que especifica la ruta completa donde se guardará el archivo CSV descargado.
+
+Un ejemplo de uso para esta funcion es:
+
+```{r}
+#descarga_datos("NH0098", "C:/inserte/su/ruta/de/directorio/datos/estacion_NH0098")
+```
+
+## Funcion `'tabla_de_temperatura_estaciones'`
+
+Esta función genera una tabla resumen de las temperaturas mínima, máxima y promedio por estación a partir de los datos descargados.
+
+Utiliza informacion de la variable `'datos'`. Este es un data frame que contiene datos de temperatura con al menos las columnas id (identificador de la estación) y temperatura_abrigo_150cm (temperatura medida a 150 cm del suelo).
+
+Un ejemplo de uso para esta funcion es:
+
+```{r}
+#tabla_de_temperatura_estaciones(estacion_NH0046)
+```
+
+## Funcion `'grafico_mensual'`
+
+Esta función genera un gráfico de líneas que muestra la temperatura promedio mensual por estación. Permite personalizar los colores y el título del gráfico.
+
+### Parámetros de la función `grafico_mensual`
+
+La función `grafico_mensual` utiliza los siguientes parámetros:
+
+* **`datos`**: Un data frame con las columnas:
+  - `fecha`: Fecha de la observación en formato "YYYY-MM-DD".
+  - `id`: Identificador de la estación.
+  - `temperatura_abrigo_150cm`: Temperatura medida a 150 cm de altura.
+
+* **`colores`**: Un vector opcional de colores para cada estación. Si no se especifica, se seleccionarán colores aleatorios.
+
+* **`titulo`**: Un string opcional que define el título del gráfico. Por defecto, es `"Temperatura"`.
+
+Un ejemplo de uso para esta funcion es:
+
+```{r}
+#grafico_mensual(estacion_NH0046, colores = "red", titulo = "Temperatura")
+```
