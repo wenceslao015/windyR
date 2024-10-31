@@ -15,6 +15,7 @@
 #' @import dplyr
 #' @import lubridate
 #' @export
+
 grafico_mensual <- function(datos, colores = NULL, titulo = "Temperatura") {
 
   datos$fecha <- as.Date(datos$fecha)
