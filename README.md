@@ -20,20 +20,20 @@ pak::pak("wenceslao015/windyR")
 #> 
 #> → Will update 1 package.
 #> → Will download 1 package with unknown size.
-#> + windyR 0.0.0.9000 → 0.0.0.9000 [bld][cmp][dl] (GitHub: 1797dff)
+#> + windyR 0.0.0.9000 → 0.0.0.9000 [bld][cmp][dl] (GitHub: 5c2ca63)
 #> ℹ Getting 1 pkg with unknown size
-#> ✔ Got windyR 0.0.0.9000 (source) (3.31 MB)
+#> ✔ Got windyR 0.0.0.9000 (source) (3.32 MB)
 #> ℹ Packaging windyR 0.0.0.9000
-#> ✔ Packaged windyR 0.0.0.9000 (5.2s)
+#> ✔ Packaged windyR 0.0.0.9000 (5.4s)
 #> ℹ Building windyR 0.0.0.9000
-#> ✔ Built windyR 0.0.0.9000 (3.6s)
-#> ✔ Installed windyR 0.0.0.9000 (github::wenceslao015/windyR@1797dff) (98ms)
-#> ✔ 1 pkg: upd 1, dld 1 (NA B) [19.8s]
+#> ✔ Built windyR 0.0.0.9000 (5.2s)
+#> ✔ Installed windyR 0.0.0.9000 (github::wenceslao015/windyR@5c2ca63) (106ms)
+#> ✔ 1 pkg: upd 1, dld 1 (NA B) [21.3s]
 ```
 
 ## Ejemplo
 
-Esto es un ejemplo sobre una de las funciones basicas de este paquete
+Esto es un ejemplo sobre una de las funciones basicas de este paquete:
 
 ``` r
 library(windyR)
