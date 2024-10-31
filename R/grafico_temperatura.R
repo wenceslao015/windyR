@@ -1,6 +1,6 @@
 #' Gráfico de temperatura mensual promedio por estación
 #'
-#' La función `grafico_mensual` genera un gráfico de líneas que muestra la temperatura promedio mensual para cada estación en los datos proporcionados. Permite personalizar el título y los colores del gráfico.
+#' La función grafico_mensual genera un gráfico de líneas que muestra la temperatura promedio mensual para cada estación en los datos proporcionados. Permite personalizar el título y los colores del gráfico.
 #'
 #' @param datos Un data frame que contiene los datos de temperatura por estación.
 #' @param colores Un vector opcional de colores para cada estación. Si no se especifica, se seleccionarán colores aleatorios.
@@ -15,6 +15,7 @@
 #' @import dplyr
 #' @import lubridate
 #' @export
+
 grafico_mensual <- function(datos, colores = NULL, titulo = "Temperatura") {
 
   datos$fecha <- as.Date(datos$fecha)
@@ -34,4 +35,3 @@ grafico_mensual <- function(datos, colores = NULL, titulo = "Temperatura") {
 
   return(grafico)
 }
-
