@@ -29,6 +29,7 @@ Se puede instalar la version de windyR desde [GitHub](https://github.com/) con:
 ```{r}
 # install.packages("pak")
 pak::pak("wenceslao015/windyR")
+library(windyR)
 ```
 
 ## Ejemplo
@@ -36,7 +37,14 @@ pak::pak("wenceslao015/windyR")
 Esto es un ejemplo sobre una de las funciones basicas de este paquete:
 
 ```{r}
-library(windyR)
-grafico_mensual(estacion_NH0046, colores = "green", titulo = "Temperatura")
+NH0098 = descarga_datos("NH0098", "estacion_NH0098.csv")
+```
+
+```{r}
+tabla_de_temperatura_estaciones(NH0098)
+```
+
+```{r}
+grafico_mensual(NH0098, colores = "red", titulo = "Temperatura")
 ```
 
