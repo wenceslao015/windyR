@@ -17,7 +17,7 @@ grafico_mensual(datos, colores = NULL, titulo = "Temperatura")
 Un objeto de clase ggplot que representa el gráfico de temperatura mensual promedio por estación.
 }
 \description{
-La función \code{grafico_mensual} genera un gráfico de líneas que muestra la temperatura promedio mensual para cada estación en los datos proporcionados. Permite personalizar el título y los colores del gráfico.
+La función grafico_mensual genera un gráfico de líneas que muestra la temperatura promedio mensual para cada estación en los datos proporcionados. Permite personalizar el título y los colores del gráfico.
 }
 \examples{
 grafico_mensual(estacion_NH0046, colores = "red", titulo = "Temperatura")

@@ -6,7 +6,7 @@
 #' @param ruta_archivo Un string con la ruta completa y el nombre del archivo donde se guardará el CSV descargado.
 #'
 #' @return Un data frame con los datos de la estación meteorológica descargada.
-#'
+#' @import readr
 #' @examples
 #' \dontrun{
 #' descarga_datos("NH0098", "C:/inserte/su/ruta/de/directorio/datos/estacion_NH0098")

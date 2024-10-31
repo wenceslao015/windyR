@@ -11,7 +11,7 @@
 #'   \item \code{max_temp}: Temperatura máxima registrada en la estación.
 #'   \item \code{mean_temp}: Temperatura promedio registrada en la estación.
 #' }
-#'
+#' @import dplyr
 #' @examples
 #' tabla_de_temperatura_estaciones(estacion_NH0046)
 #'

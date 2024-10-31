@@ -19,7 +19,7 @@ Un data frame con el resumen de temperaturas por estación, con las siguientes c
 }
 }
 \description{
-La función \code{tabla_de_temperatura_estaciones} genera una tabla resumen que incluye la temperatura mínima, máxima y promedio por estación a partir de un conjunto de datos de temperatura.
+La función \code{tabla_de_temperatura_estaciones} genera una tabla resumen que incluye la temperatura máxima, mínima y promedio por estación a partir de un conjunto de datos de temperatura.
 }
 \examples{
 tabla_de_temperatura_estaciones(estacion_NH0046)
