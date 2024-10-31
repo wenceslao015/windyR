@@ -4,6 +4,8 @@
 # windyR <img src="man/figures/logo.png" align="right" width="150"/>
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/wenceslao015/windyR/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/wenceslao015/windyR/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 ## Objetivo
@@ -26,10 +28,20 @@ Se puede instalar la version de windyR desde
 ``` r
 # install.packages("pak")
 pak::pak("wenceslao015/windyR")
-#> ℹ Loading metadata database✔ Loading metadata database ... done
+#> ✔ Updated metadata database: 5.09 MB in 4 files.
+#> ℹ Updating metadata database✔ Updating metadata database ... done
 #>  
-#> ℹ No downloads are needed
-#> ✔ 1 pkg + 41 deps: kept 34 [4.9s]
+#> → Will update 1 package.
+#> → Will download 1 package with unknown size.
+#> + windyR 0.0.0.9000 → 0.0.0.9000 [bld][cmp][dl] (GitHub: 1951ba9)
+#> ℹ Getting 1 pkg with unknown size
+#> ✔ Got windyR 0.0.0.9000 (source) (5.64 MB)
+#> ℹ Packaging windyR 0.0.0.9000
+#> ✔ Packaged windyR 0.0.0.9000 (5.9s)
+#> ℹ Building windyR 0.0.0.9000
+#> ✔ Built windyR 0.0.0.9000 (4.2s)
+#> ✔ Installed windyR 0.0.0.9000 (github::wenceslao015/windyR@1951ba9) (91ms)
+#> ✔ 1 pkg + 41 deps: kept 34, upd 1, dld 1 (NA B) [26s]
 ```
 
 ## Funciones
@@ -60,16 +72,6 @@ NH0098 = descarga_datos("NH0098", "estacion_NH0098.csv")
 #> e.g.:
 #>   dat <- vroom(...)
 #>   problems(dat)
-#> Rows: 23733 Columns: 35
-#> ── Column specification ────────────────────────────────────────────────────────
-#> Delimiter: ","
-#> chr   (2): id, direccion_viento_1000cm
-#> dbl  (21): temperatura_abrigo_150cm, temperatura_abrigo_150cm_maxima, temper...
-#> lgl  (11): temperatura_intemperie_50cm_minima, temperatura_inte_5cm, tempera...
-#> date  (1): fecha
-#> 
-#> ℹ Use `spec()` to retrieve the full column specification for this data.
-#> ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
 ```
 
 ``` r
