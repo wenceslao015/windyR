@@ -1,15 +1,15 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# windyR
+# windyR <img src="man/figures/logo.png" align="right" width="150"/>
 
 <!-- badges: start -->
 <!-- badges: end -->
 
 ## Objetivo
 
-El objetivo de este paquete (“windyR”) es trabajar con datos
-meteorologicos.
+El objetivo del paquete es trabajar con datos meteorologicos, pudiendo
+crear tablas y gráficos.
 
 ## Autores
 
@@ -29,7 +29,7 @@ pak::pak("wenceslao015/windyR")
 #> ℹ Loading metadata database✔ Loading metadata database ... done
 #>  
 #> ℹ No downloads are needed
-#> ✔ 1 pkg + 41 deps: kept 34 [5.6s]
+#> ✔ 1 pkg + 41 deps: kept 34 [4.9s]
 ```
 
 ## Funciones

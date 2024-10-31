@@ -13,14 +13,15 @@ knitr::opts_chunk$set(
 )
 ```
 
-# windyR
+# windyR <img src="man/figures/logo.png" align="right" width="150"/>
+
 
 <!-- badges: start -->
 <!-- badges: end -->
 
 ## Objetivo
 
-El objetivo de este paquete ("windyR") es trabajar con datos meteorologicos.
+El objetivo del paquete es trabajar con datos meteorologicos, pudiendo crear tablas y gráficos.
 
 ## Autores
 
