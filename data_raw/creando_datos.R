@@ -26,4 +26,3 @@ datos <- dplyr::bind_rows(
 )
 
 usethis::use_data(datos)
-
