@@ -1,28 +1,19 @@
+test_that("descarga_datos descarga y lee el archivo correctamente", {
 
-test_that("descarga_datos descarga el archivo correctamente", {
-  # Define un ID de estación y un directorio de destino temporal
-  id_estacion <- "NH0098"
-  directorio_destino <- tempfile("datos_estacion")
+  # Ruta temporal para el archivo descargado
+  ruta_archivo <- tempfile(fileext = ".csv")
 
-  # Llama a la función
-  dato_prueba <- descarga_datos(id_estacion, directorio_destino)
+  # Ejecutar la función
+  datos_prueba <- descarga_datos("NH0046", ruta_archivo)
 
-  # Verifica que los datos sean un dataframe
-  expect_s3_class(dato_prueba, "data.frame")
+  # Verificar que el archivo fue descargado y leído correctamente
+  expect_true(file.exists(ruta_archivo)) # Verifica que el archivo existe
+  expect_s3_class(datos_prueba, "data.frame")   # Verifica que es un data.frame
 
-  # Verifica que el archivo haya sido creado en el directorio
-  expect_true(file.exists(file.path(directorio_destino, paste0(id_estacion, ".csv"))))
+  # Verifica que las columnas y filas no estén vacías
+  expect_gt(ncol(datos_prueba), 0)              # Asegura que haya al menos una columna
+  expect_gt(nrow(datos_prueba), 0)              # Asegura que haya al menos una fila
 
-  # Limpia el directorio de prueba
-  unlink(directorio_destino, recursive = TRUE)
-})
-
-test_that("descargar_datos lanza un error si el directorio ya existe como archivo", {
-  # Crea un archivo temporal
-  archivo_temporal <- tempfile(fileext = ".csv")
-  write.csv(data.frame(test = 1:5), archivo_temporal, row.names = FALSE)
-
-  # Intenta llamar a la función y espera un error
-  expect_error(descarga_datos("NH0098", archivo_temporal),
-               "Error: El destino especificado")
+  # Limpia el archivo temporal
+  unlink(ruta_archivo)
 })
