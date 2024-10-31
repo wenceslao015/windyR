@@ -31,7 +31,10 @@ grafico_mensual <- function(datos, colores = NULL, titulo = "Temperatura") {
     ggplot(aes(x = mes, y = mean_temp, color = id)) +
     geom_line() +
     scale_color_manual(values = colores) +
-    labs(title = titulo, x = "Mes", y = "Temperatura Promedio")
+    scale_x_continuous(breaks = 1:12, labels = month.abb) +  # Abreviaturas de los meses
+    labs(title = titulo, x = "Mes", y = "Temperatura Promedio") +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1))  # Rotación de etiquetas
 
   return(grafico)
 }
+

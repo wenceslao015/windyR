@@ -6,10 +6,17 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
+## Objetivo
+
 El objetivo de este paquete (“windyR”) es trabajar con datos
-meteorologicos. Este paquete fue creado por Justo Borrás y Wenseslao
-Tejerina, ambos estudiantes de la Licenciatura en Ciencia de Datos
-Universidad Austral
+meteorologicos.
+
+## Autores
+
+Este paquete fue creado por [Justo
+Borrás](https://github.com/justoborras2006) y [Wenceslao
+Tejerina](https://github.com/wenceslao015), ambos estudiantes de la
+Licenciatura en Ciencia de Datos Universidad Austral
 
 ## Instalación
 
@@ -23,12 +30,29 @@ pak::pak("wenceslao015/windyR")
 #>  
 #> ℹ No downloads are needed
 #> ✔ 1 pkg + 41 deps: kept 34 [5.6s]
-library(windyR)
 ```
 
-## Ejemplo
+## Funciones
 
-Esto es un ejemplo sobre una de las funciones basicas de este paquete:
+1.  **`descarga_datos()`**: Descarga un archivo CSV de datos de una
+    estación meteorológica específica desde un repositorio en línea y lo
+    guarda en la ruta especificada. Luego, lee el archivo y devuelve los
+    datos como un data frame.
+2.  **`tabla_de_temperatura_estaciones`** : genera una tabla resumen que
+    incluye la temperatura máxima, mínima y promedio por estación a
+    partir de un conjunto de datos de temperatura.
+3.  **`grafico_mensual`**: Genera un gráfico de líneas que muestra la
+    temperatura promedio mensual para cada estación en los datos
+    proporcionados. Permite personalizar el título y los colores del
+    gráfico.
+
+### Ejemplos de uso
+
+Así es como debería usarse nuestro paquete:
+
+``` r
+library(windyR)
+```
 
 ``` r
 NH0098 = descarga_datos("NH0098", "estacion_NH0098.csv")
@@ -60,4 +84,6 @@ tabla_de_temperatura_estaciones(NH0098)
 grafico_mensual(NH0098, colores = "red", titulo = "Temperatura")
 ```
 
-<img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />
+
+## Contribuciones
