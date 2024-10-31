@@ -120,7 +120,21 @@ la ruta completa donde se guardará el archivo CSV descargado.</li>
 </ul>
 <p>Un ejemplo de uso para esta funcion es:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co">#descarga_datos("NH0098", "C:/inserte/su/ruta/de/directorio/datos/estacion_NH0098")</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">NH0098</span> <span class="op">=</span> <span class="fu"><a href="../reference/descarga_datos.html">descarga_datos</a></span><span class="op">(</span><span class="st">"NH0098"</span>, <span class="st">"estacion_NH0098.csv"</span><span class="op">)</span></span>
+<span><span class="co">#&gt; Warning: One or more parsing issues, call `problems()` on your data frame for details,</span></span>
+<span><span class="co">#&gt; e.g.:</span></span>
+<span><span class="co">#&gt;   dat &lt;- vroom(...)</span></span>
+<span><span class="co">#&gt;   problems(dat)</span></span>
+<span><span class="co">#&gt; <span style="font-weight: bold;">Rows: </span><span style="color: #0000BB;">23733</span> <span style="font-weight: bold;">Columns: </span><span style="color: #0000BB;">35</span></span></span>
+<span><span class="co">#&gt; <span style="color: #00BBBB;">──</span> <span style="font-weight: bold;">Column specification</span> <span style="color: #00BBBB;">────────────────────────────────────────────────────────</span></span></span>
+<span><span class="co">#&gt; <span style="font-weight: bold;">Delimiter:</span> ","</span></span>
+<span><span class="co">#&gt; <span style="color: #BB0000;">chr</span>   (2): id, direccion_viento_1000cm</span></span>
+<span><span class="co">#&gt; <span style="color: #00BB00;">dbl</span>  (21): temperatura_abrigo_150cm, temperatura_abrigo_150cm_maxima, temper...</span></span>
+<span><span class="co">#&gt; <span style="color: #BBBB00;">lgl</span>  (11): temperatura_intemperie_50cm_minima, temperatura_inte_5cm, tempera...</span></span>
+<span><span class="co">#&gt; <span style="color: #0000BB;">date</span>  (1): fecha</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; <span style="color: #00BBBB;">ℹ</span> Use `spec()` to retrieve the full column specification for this data.</span></span>
+<span><span class="co">#&gt; <span style="color: #00BBBB;">ℹ</span> Specify the column types or set `show_col_types = FALSE` to quiet this message.</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="funcion-tabla_de_temperatura_estaciones">Funcion <code>'tabla_de_temperatura_estaciones'</code><a class="anchor" aria-label="anchor" href="#funcion-tabla_de_temperatura_estaciones"></a>
@@ -133,7 +147,11 @@ id (identificador de la estación) y temperatura_abrigo_150cm
 (temperatura medida a 150 cm del suelo).</p>
 <p>Un ejemplo de uso para esta funcion es:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co">#tabla_de_temperatura_estaciones(estacion_NH0046)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/tabla_de_temperatura_estaciones.html">tabla_de_temperatura_estaciones</a></span><span class="op">(</span><span class="va">NH0098</span><span class="op">)</span></span>
+<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 1 × 4</span></span></span>
+<span><span class="co">#&gt;   id     min_temp max_temp mean_temp</span></span>
+<span><span class="co">#&gt;   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span> NH0098    -<span style="color: #BB0000;">17.4</span>     37.4      18.6</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="funcion-grafico_mensual">Funcion <code>'grafico_mensual'</code><a class="anchor" aria-label="anchor" href="#funcion-grafico_mensual"></a>
@@ -170,7 +188,8 @@ define el título del gráfico. Por defecto, es
 </ul>
 <p>Un ejemplo de uso para esta funcion es:</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co">#grafico_mensual(estacion_NH0046, colores = "red", titulo = "Temperatura")</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/grafico_mensual.html">grafico_mensual</a></span><span class="op">(</span><span class="va">NH0098</span>, colores <span class="op">=</span> <span class="st">"red"</span>, titulo <span class="op">=</span> <span class="st">"Temperatura"</span><span class="op">)</span></span></code></pre></div>
+<p><img src="primera_vinieta_files/figure-html/unnamed-chunk-4-1.png" width="700"></p>
 </div>
 </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
