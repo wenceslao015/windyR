@@ -56,7 +56,16 @@
 </h1></div>
 <!-- badges: start -->
 <!-- badges: end -->
-<p>El objetivo de este paquete (“windyR”) es trabajar con datos meteorologicos. Este paquete fue creado por Justo Borrás y Wenseslao Tejerina, ambos estudiantes de la Licenciatura en Ciencia de Datos Universidad Austral</p>
+<div class="section level2">
+<h2 id="objetivo">Objetivo<a class="anchor" aria-label="anchor" href="#objetivo"></a>
+</h2>
+<p>El objetivo de este paquete (“windyR”) es trabajar con datos meteorologicos.</p>
+</div>
+<div class="section level2">
+<h2 id="autores">Autores<a class="anchor" aria-label="anchor" href="#autores"></a>
+</h2>
+<p>Este paquete fue creado por <a href="https://github.com/justoborras2006" class="external-link">Justo Borrás</a> y <a href="https://github.com/wenceslao015" class="external-link">Wenceslao Tejerina</a>, ambos estudiantes de la Licenciatura en Ciencia de Datos Universidad Austral</p>
+</div>
 <div class="section level2">
 <h2 id="instalación">Instalación<a class="anchor" aria-label="anchor" href="#instalaci%C3%B3n"></a>
 </h2>
@@ -67,14 +76,26 @@
 <span><span class="co">#&gt; ℹ Loading metadata database✔ Loading metadata database ... done</span></span>
 <span><span class="co">#&gt;  </span></span>
 <span><span class="co">#&gt; ℹ No downloads are needed</span></span>
-<span><span class="co">#&gt; ✔ 1 pkg + 41 deps: kept 34 [5.6s]</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/wenceslao015/windyR" class="external-link">windyR</a></span><span class="op">)</span></span></code></pre></div>
+<span><span class="co">#&gt; ✔ 1 pkg + 41 deps: kept 34 [5.6s]</span></span></code></pre></div>
 </div>
 <div class="section level2">
-<h2 id="ejemplo">Ejemplo<a class="anchor" aria-label="anchor" href="#ejemplo"></a>
+<h2 id="funciones">Funciones<a class="anchor" aria-label="anchor" href="#funciones"></a>
 </h2>
-<p>Esto es un ejemplo sobre una de las funciones basicas de este paquete:</p>
+<ol style="list-style-type: decimal">
+<li>
+<strong><code><a href="reference/descarga_datos.html">descarga_datos()</a></code></strong>: Descarga un archivo CSV de datos de una estación meteorológica específica desde un repositorio en línea y lo guarda en la ruta especificada. Luego, lee el archivo y devuelve los datos como un data frame.</li>
+<li>
+<strong><code>tabla_de_temperatura_estaciones</code></strong> : genera una tabla resumen que incluye la temperatura máxima, mínima y promedio por estación a partir de un conjunto de datos de temperatura.</li>
+<li>
+<strong><code>grafico_mensual</code></strong>: Genera un gráfico de líneas que muestra la temperatura promedio mensual para cada estación en los datos proporcionados. Permite personalizar el título y los colores del gráfico.</li>
+</ol>
+<div class="section level3">
+<h3 id="ejemplos-de-uso">Ejemplos de uso<a class="anchor" aria-label="anchor" href="#ejemplos-de-uso"></a>
+</h3>
+<p>Así es como debería usarse nuestro paquete:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/wenceslao015/windyR" class="external-link">windyR</a></span><span class="op">)</span></span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">NH0098</span> <span class="op">=</span> <span class="fu"><a href="reference/descarga_datos.html">descarga_datos</a></span><span class="op">(</span><span class="st">"NH0098"</span>, <span class="st">"estacion_NH0098.csv"</span><span class="op">)</span></span>
 <span><span class="co">#&gt; Warning: One or more parsing issues, call `problems()` on your data frame for details,</span></span>
 <span><span class="co">#&gt; e.g.:</span></span>
@@ -90,15 +111,20 @@
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; ℹ Use `spec()` to retrieve the full column specification for this data.</span></span>
 <span><span class="co">#&gt; ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</span></span></code></pre></div>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/tabla_de_temperatura_estaciones.html">tabla_de_temperatura_estaciones</a></span><span class="op">(</span><span class="va">NH0098</span><span class="op">)</span></span>
 <span><span class="co">#&gt; # A tibble: 1 × 4</span></span>
 <span><span class="co">#&gt;   id     min_temp max_temp mean_temp</span></span>
 <span><span class="co">#&gt;   &lt;chr&gt;     &lt;dbl&gt;    &lt;dbl&gt;     &lt;dbl&gt;</span></span>
 <span><span class="co">#&gt; 1 NH0098    -17.4     37.4      18.6</span></span></code></pre></div>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/grafico_mensual.html">grafico_mensual</a></span><span class="op">(</span><span class="va">NH0098</span>, colores <span class="op">=</span> <span class="st">"red"</span>, titulo <span class="op">=</span> <span class="st">"Temperatura"</span><span class="op">)</span></span></code></pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-5-1.png" width="100%"></p>
+<p><img src="reference/figures/README-unnamed-chunk-6-1.png" width="100%"></p>
+</div>
+</div>
+<div class="section level2">
+<h2 id="contribuciones">Contribuciones<a class="anchor" aria-label="anchor" href="#contribuciones"></a>
+</h2>
 </div>
 </div>
   </main><aside class="col-md-3"><div class="links">
