@@ -43,7 +43,7 @@ La función `descarga_datos` utiliza los siguientes parámetros:
 Un ejemplo de uso para esta funcion es:
 
 ```{r}
-#descarga_datos("NH0098", "C:/inserte/su/ruta/de/directorio/datos/estacion_NH0098")
+NH0098 = descarga_datos("NH0098", "estacion_NH0098.csv")
 ```
 
 ## Funcion `'tabla_de_temperatura_estaciones'`
@@ -55,7 +55,7 @@ Utiliza informacion de la variable `'datos'`. Este es un data frame que contiene
 Un ejemplo de uso para esta funcion es:
 
 ```{r}
-#tabla_de_temperatura_estaciones(estacion_NH0046)
+tabla_de_temperatura_estaciones(NH0098)
 ```
 
 ## Funcion `'grafico_mensual'`
@@ -78,5 +78,5 @@ La función `grafico_mensual` utiliza los siguientes parámetros:
 Un ejemplo de uso para esta funcion es:
 
 ```{r}
-#grafico_mensual(estacion_NH0046, colores = "red", titulo = "Temperatura")
+grafico_mensual(NH0098, colores = "red", titulo = "Temperatura")
 ```
