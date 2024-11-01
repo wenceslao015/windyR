@@ -67,3 +67,15 @@ grafico_mensual(NH0098, colores = "red", titulo = "Temperatura")
 ```
 
 ## Contribuciones
+
+Si deseas realizar contribuciones al paquete, ya sea para agregar mejoras, corregir errores o proponer nuevas funciones, sigue estos pasos:
+
+
+1.  **Crea una rama para tu contribución**: Para mantener el historial de cambios ordenado, crea una rama nueva para trabajar en tu contribución. Puedes hacer esto ejecutando `git checkout -b nombre-de-la-rama`.
+
+2.  **Realiza un fork y clona el repositorio**: Haz un *fork* de este repositorio en tu cuenta de GitHub y clona el repositorio en tu máquina local para trabajar en los cambios.
+
+3.  **Realiza tus cambios y haz un pull request**: Haz los cambios que consideres necesarios en tu copia del repositorio. Luego, abre un *pull request* (PR) a la rama principal del proyecto con una descripción clara del propósito de tu contribución. Asegúrate de que el PR esté bien documentado y, si es posible, incluye pruebas de tus cambios para facilitar su revisión.
+
+Agradecemos tus contribuciones y te recomendamos seguir el [código de conducta](CODE_OF_CONDUCT.md) para fomentar un ambiente positivo y colaborativo.
+

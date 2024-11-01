@@ -32,17 +32,8 @@ Se puede instalar la version de windyR desde
 pak::pak("wenceslao015/windyR")
 #> ℹ Loading metadata database✔ Loading metadata database ... done
 #>  
-#> → Will update 1 package.
-#> → Will download 1 package with unknown size.
-#> + windyR 0.0.0.9000 → 0.0.0.9000 [bld][cmp][dl] (GitHub: 2b5b885)
-#> ℹ Getting 1 pkg with unknown size
-#> ✔ Got windyR 0.0.0.9000 (source) (7.03 MB)
-#> ℹ Packaging windyR 0.0.0.9000
-#> ✔ Packaged windyR 0.0.0.9000 (8s)
-#> ℹ Building windyR 0.0.0.9000
-#> ✔ Built windyR 0.0.0.9000 (7.1s)
-#> ✔ Installed windyR 0.0.0.9000 (github::wenceslao015/windyR@2b5b885) (129ms)
-#> ✔ 1 pkg + 41 deps: kept 34, upd 1, dld 1 (NA B) [30.5s]
+#> ℹ No downloads are needed
+#> ✔ 1 pkg + 41 deps: kept 35 [8.2s]
 ```
 
 ## Funciones
@@ -90,3 +81,27 @@ grafico_mensual(NH0098, colores = "red", titulo = "Temperatura")
 <img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />
 
 ## Contribuciones
+
+Si deseas realizar contribuciones al paquete, ya sea para agregar
+mejoras, corregir errores o proponer nuevas funciones, sigue estos
+pasos:
+
+1.  **Crea una rama para tu contribución**: Para mantener el historial
+    de cambios ordenado, crea una rama nueva para trabajar en tu
+    contribución. Puedes hacer esto ejecutando
+    `git checkout -b nombre-de-la-rama`.
+
+2.  **Realiza un fork y clona el repositorio**: Haz un *fork* de este
+    repositorio en tu cuenta de GitHub y clona el repositorio en tu
+    máquina local para trabajar en los cambios.
+
+3.  **Realiza tus cambios y haz un pull request**: Haz los cambios que
+    consideres necesarios en tu copia del repositorio. Luego, abre un
+    *pull request* (PR) a la rama principal del proyecto con una
+    descripción clara del propósito de tu contribución. Asegúrate de que
+    el PR esté bien documentado y, si es posible, incluye pruebas de tus
+    cambios para facilitar su revisión.
+
+Agradecemos tus contribuciones y te recomendamos seguir el [código de
+conducta](CODE_OF_CONDUCT.md) para fomentar un ambiente positivo y
+colaborativo.
