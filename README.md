@@ -6,6 +6,8 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/wenceslao015/windyR/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/wenceslao015/windyR/actions/workflows/R-CMD-check.yaml)
+[![Lifecycle:
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
 ## Objetivo
@@ -28,20 +30,19 @@ Se puede instalar la version de windyR desde
 ``` r
 # install.packages("pak")
 pak::pak("wenceslao015/windyR")
-#> ✔ Updated metadata database: 5.09 MB in 4 files.
-#> ℹ Updating metadata database✔ Updating metadata database ... done
+#> ℹ Loading metadata database✔ Loading metadata database ... done
 #>  
 #> → Will update 1 package.
 #> → Will download 1 package with unknown size.
-#> + windyR 0.0.0.9000 → 0.0.0.9000 [bld][cmp][dl] (GitHub: 1951ba9)
+#> + windyR 0.0.0.9000 → 0.0.0.9000 [bld][cmp][dl] (GitHub: 2b5b885)
 #> ℹ Getting 1 pkg with unknown size
-#> ✔ Got windyR 0.0.0.9000 (source) (5.64 MB)
+#> ✔ Got windyR 0.0.0.9000 (source) (7.03 MB)
 #> ℹ Packaging windyR 0.0.0.9000
-#> ✔ Packaged windyR 0.0.0.9000 (5.9s)
+#> ✔ Packaged windyR 0.0.0.9000 (8s)
 #> ℹ Building windyR 0.0.0.9000
-#> ✔ Built windyR 0.0.0.9000 (4.2s)
-#> ✔ Installed windyR 0.0.0.9000 (github::wenceslao015/windyR@1951ba9) (91ms)
-#> ✔ 1 pkg + 41 deps: kept 34, upd 1, dld 1 (NA B) [26s]
+#> ✔ Built windyR 0.0.0.9000 (7.1s)
+#> ✔ Installed windyR 0.0.0.9000 (github::wenceslao015/windyR@2b5b885) (129ms)
+#> ✔ 1 pkg + 41 deps: kept 34, upd 1, dld 1 (NA B) [30.5s]
 ```
 
 ## Funciones
