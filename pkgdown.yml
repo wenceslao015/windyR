@@ -3,7 +3,7 @@ pkgdown: 2.1.1
 pkgdown_sha: ~
 articles:
   primera_vinieta: primera_vinieta.html
-last_built: 2024-10-31T22:12Z
+last_built: 2024-11-01T01:32Z
 urls:
   reference: https://wenceslao015.github.io/windyR/reference
   article: https://wenceslao015.github.io/windyR/articles
