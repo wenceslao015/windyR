@@ -36,7 +36,7 @@ Se puede instalar la version de windyR desde [GitHub](https://github.com/) con:
 
 ```{r}
 # install.packages("pak")
-pak::pak("wenceslao015/windyR")
+# pak::pak("wenceslao015/windyR")
 ```
 
 ## Funciones

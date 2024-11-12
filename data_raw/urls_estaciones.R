@@ -6,7 +6,7 @@ urls <- c("https://raw.githubusercontent.com/rse-r/intro-programacion/main/datos
           "https://raw.githubusercontent.com/rse-r/intro-programacion/main/datos/NH0098.csv",
           "https://raw.githubusercontent.com/rse-r/intro-programacion/main/datos/NH0437.csv")
 
-# Nombres adecuados para los archivos en la carpeta datos
+# Nombres adecuados para los archivos en la carpeta data_raw
 file_names <- c("data_raw/metadatos_completos.csv",
                 "data_raw/estacion_NH0472.csv",
                 "data_raw/estacion_NH0910.csv",
