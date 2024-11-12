@@ -75,11 +75,7 @@
 <p>Se puede instalar la version de windyR desde <a href="https://github.com/" class="external-link">GitHub</a> con:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># install.packages("pak")</span></span>
-<span><span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="https://pak.r-lib.org/reference/pak.html" class="external-link">pak</a></span><span class="op">(</span><span class="st">"wenceslao015/windyR"</span><span class="op">)</span></span>
-<span><span class="co">#&gt; ℹ Loading metadata database✔ Loading metadata database ... done</span></span>
-<span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; ℹ No downloads are needed</span></span>
-<span><span class="co">#&gt; ✔ 1 pkg + 41 deps: kept 35 [8.2s]</span></span></code></pre></div>
+<span><span class="co">#pak::pak("wenceslao015/windyR")</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="funciones">Funciones<a class="anchor" aria-label="anchor" href="#funciones"></a>
@@ -103,7 +99,17 @@
 <span><span class="co">#&gt; Warning: One or more parsing issues, call `problems()` on your data frame for details,</span></span>
 <span><span class="co">#&gt; e.g.:</span></span>
 <span><span class="co">#&gt;   dat &lt;- vroom(...)</span></span>
-<span><span class="co">#&gt;   problems(dat)</span></span></code></pre></div>
+<span><span class="co">#&gt;   problems(dat)</span></span>
+<span><span class="co">#&gt; Rows: 23733 Columns: 35</span></span>
+<span><span class="co">#&gt; ── Column specification ────────────────────────────────────────────────────────</span></span>
+<span><span class="co">#&gt; Delimiter: ","</span></span>
+<span><span class="co">#&gt; chr   (2): id, direccion_viento_1000cm</span></span>
+<span><span class="co">#&gt; dbl  (21): temperatura_abrigo_150cm, temperatura_abrigo_150cm_maxima, temper...</span></span>
+<span><span class="co">#&gt; lgl  (11): temperatura_intemperie_50cm_minima, temperatura_inte_5cm, tempera...</span></span>
+<span><span class="co">#&gt; date  (1): fecha</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; ℹ Use `spec()` to retrieve the full column specification for this data.</span></span>
+<span><span class="co">#&gt; ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</span></span></code></pre></div>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/tabla_de_temperatura_estaciones.html">tabla_de_temperatura_estaciones</a></span><span class="op">(</span><span class="va">NH0098</span><span class="op">)</span></span>
 <span><span class="co">#&gt; # A tibble: 1 × 4</span></span>
