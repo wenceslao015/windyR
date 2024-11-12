@@ -6,22 +6,20 @@
 #' @param ruta_archivo Un string con la ruta completa y el nombre del archivo donde se guardará el CSV descargado.
 #'
 #' @return Un data frame con los datos de la estación meteorológica descargada.
-#' @import readr
 #' @examples
 #' \dontrun{
 #' descarga_datos("NH0098", "C:/inserte/su/ruta/de/directorio/datos/estacion_NH0098")
 #' }
 #'
 #' @export
-
 descarga_datos <- function(id_estacion, ruta_archivo) {
   url_repositorio <- "https://raw.githubusercontent.com/rse-r/intro-programacion/main/datos/"
-  estacion_url <- paste0(url_repositorio, id_estacion, ".csv")
+  estacion_url <- base::paste0(url_repositorio, id_estacion, ".csv")  # Base R
 
-  download.file(url = estacion_url, destfile = ruta_archivo, mode = "wb")
+  utils::download.file(url = estacion_url, destfile = ruta_archivo, mode = "wb")  # Base R (utils)
 
   # Desactivar el mensaje de tipo de columna
-  datos <- readr::read_csv(ruta_archivo, show_col_types = FALSE)
+  datos <- readr::read_csv(ruta_archivo, show_col_types = FALSE)  # readr
 
   return(datos)
 }

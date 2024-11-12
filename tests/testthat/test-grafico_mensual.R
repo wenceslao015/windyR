@@ -1,5 +1,4 @@
-library(testthat)
-library(ggplot2)
+
 
 test_that("grafico_mensual crea un objeto ggplot", {
   # Crea un ejemplo de datos de entrada

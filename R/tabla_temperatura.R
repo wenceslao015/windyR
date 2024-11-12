@@ -17,12 +17,13 @@
 #'
 #' @export
 tabla_de_temperatura_estaciones <- function(datos) {
-  resumen <- datos %>%
-    group_by(id) %>%
-    summarise(
+  resumen <- datos |>
+    dplyr::group_by(id) |>
+    dplyr::summarise(
       min_temp = min(temperatura_abrigo_150cm, na.rm = TRUE),
       max_temp = max(temperatura_abrigo_150cm, na.rm = TRUE),
       mean_temp = mean(temperatura_abrigo_150cm, na.rm = TRUE)
     )
   return(resumen)
 }
+
