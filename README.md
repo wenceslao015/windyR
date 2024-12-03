@@ -5,7 +5,6 @@
 
 <!-- badges: start -->
 
-[![codecov](https://codecov.io/github/wenceslao015/windyR/graph/badge.svg?token=LBZFR3MZR3)](https://codecov.io/github/wenceslao015/windyR)
 [![R-CMD-check](https://github.com/wenceslao015/windyR/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/wenceslao015/windyR/actions/workflows/R-CMD-check.yaml)
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
