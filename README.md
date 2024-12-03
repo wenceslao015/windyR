@@ -5,9 +5,12 @@
 
 <!-- badges: start -->
 
+[![codecov](https://codecov.io/github/wenceslao015/windyR/graph/badge.svg?token=LBZFR3MZR3)](https://codecov.io/github/wenceslao015/windyR)
 [![R-CMD-check](https://github.com/wenceslao015/windyR/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/wenceslao015/windyR/actions/workflows/R-CMD-check.yaml)
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![Codecov test
+coverage](https://codecov.io/gh/wenceslao015/windyR/graph/badge.svg)](https://app.codecov.io/gh/wenceslao015/windyR)
 <!-- badges: end -->
 
 ## Objetivo
@@ -29,7 +32,7 @@ Se puede instalar la version de windyR desde
 
 ``` r
 # install.packages("pak")
-#pak::pak("wenceslao015/windyR")
+# pak::pak("wenceslao015/windyR")
 ```
 
 ## Funciones
@@ -60,16 +63,6 @@ NH0098 = descarga_datos("NH0098", "estacion_NH0098.csv")
 #> e.g.:
 #>   dat <- vroom(...)
 #>   problems(dat)
-#> Rows: 23733 Columns: 35
-#> ── Column specification ────────────────────────────────────────────────────────
-#> Delimiter: ","
-#> chr   (2): id, direccion_viento_1000cm
-#> dbl  (21): temperatura_abrigo_150cm, temperatura_abrigo_150cm_maxima, temper...
-#> lgl  (11): temperatura_intemperie_50cm_minima, temperatura_inte_5cm, tempera...
-#> date  (1): fecha
-#> 
-#> ℹ Use `spec()` to retrieve the full column specification for this data.
-#> ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
 ```
 
 ``` r
